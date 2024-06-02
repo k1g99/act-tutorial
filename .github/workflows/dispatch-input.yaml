@@ -1,0 +1,19 @@
+name: Hello World with Workflow Dispatch + input
+    
+on:
+    workflow_dispatch:
+        inputs:
+            name:
+                description: "name"
+                required: true
+
+jobs:
+    say-hello-dispatch:
+        runs-on: ubuntu-latest
+
+        steps:
+            - name: Checkout repository
+              uses: actions/checkout@v3
+
+            - name: Print Hello World
+              run: echo "Hello ${{ github.event.inputs.name }} Dispatched! - input"

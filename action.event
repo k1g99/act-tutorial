@@ -1,0 +1,6 @@
+{
+  "action": "workflow_dispatch",
+  "inputs": {
+      "name": "감자와고구마"
+  }
+}
