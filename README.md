@@ -10,6 +10,7 @@ Github Actions를 테스트하려면 항상 commit / push 하면서 확인하는
 
 1. 작동 방식 
     - workflow가 돌아갈 컨테이너를 생성해서 실행시켜줌 -> **Docker 설치가 필요함**
+    - 처음 실행하려고 하면 이미지 크기(micro/medium/large) 설정하는 부분이 있는데, 일단 medium을 선택했음.
 
 1. Act 명령어  
     > [주의] ARM 아키텍쳐 사용하는 경우(맥북 M시리즈)에는 명령어마다 `--container-architecture linux/amd64` 옵션을 붙여주거나,
